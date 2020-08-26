@@ -27,7 +27,7 @@
     "wd": "^1.12.0"
   },
   "devDependencies": {
-    "airtap": "github:airtap/airtap#d8da4f6",
+    "airtap": "github:airtap/airtap#9077551",
     "buffer": "^4.9.2",
     "cross-env": "^7.0.2",
     "depcheck": "^1.2.0",
