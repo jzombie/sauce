@@ -5,8 +5,9 @@
   "license": "MIT",
   "author": "Vincent Weevers",
   "scripts": {
-    "test": "standard && hallmark && depcheck --ignores buffer && npm run test:unit",
-    "test:unit": "cross-env DEBUG=airtap* nyc node test",
+    "test": "npm run test:lint && npm run test:integration",
+    "test:lint": "standard && hallmark && depcheck --ignores buffer",
+    "test:integration": "cross-env DEBUG=airtap* nyc node test",
     "fix:js": "standard --fix",
     "fix:md": "hallmark --fix"
   },

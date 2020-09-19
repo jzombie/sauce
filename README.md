@@ -4,7 +4,8 @@
 
 [![npm status](http://img.shields.io/npm/v/airtap-sauce.svg)](https://www.npmjs.org/package/airtap-sauce)
 [![node](https://img.shields.io/node/v/airtap-sauce.svg)](https://www.npmjs.org/package/airtap-sauce)
-[![Travis build status](https://img.shields.io/travis/com/airtap/sauce.svg?label=travis)](http://travis-ci.com/airtap/sauce)
+[![Sauce Labs integration status](https://github.com/airtap/sauce/workflows/Sauce%20Labs/badge.svg)](https://github.com/airtap/sauce/actions?query=workflow%3A%22Sauce+Labs%22)
+[![Lint](https://github.com/airtap/sauce/workflows/Lint/badge.svg)](https://github.com/airtap/sauce/actions?query=workflow%3ALint)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Table of Contents
