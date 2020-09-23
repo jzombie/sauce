@@ -10,6 +10,7 @@ const sauceConnectLauncher = require('sauce-connect-launcher')
 const transient = require('transient-error')
 const buildNumber = require('build-number')
 const debug = require('debug')('airtap-sauce')
+const debugTunnel = require('debug')('airtap-sauce:sc')
 const fs = require('fs')
 
 const kHostname = Symbol('kHostname')
@@ -77,7 +78,8 @@ class SauceProvider extends Provider {
 
       username: this[kUsername],
       accessKey: this[kAccessKey],
-      tunnelIdentifier: this[kTunnelIdentifier]
+      tunnelIdentifier: this[kTunnelIdentifier],
+      logger: debugTunnel
     }
 
     sauceConnectLauncher(tunnelOptions, (err, sauceConnect) => {
