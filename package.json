@@ -28,7 +28,7 @@
     "wd": "^1.12.0"
   },
   "devDependencies": {
-    "airtap": "^4.0.1",
+    "airtap": "^4.0.2",
     "buffer": "^4.9.2",
     "cross-env": "^7.0.2",
     "depcheck": "^1.2.0",
