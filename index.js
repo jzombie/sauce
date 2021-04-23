@@ -127,9 +127,8 @@ class SauceBrowser extends Browser {
     if (Object.keys(caps).length === 0) {
       return process.nextTick(cb, new Error('Capabilities are required'))
     }
-
     const testName = options.name || this.manifest.name
-    const build = buildNumber()
+    const build = buildNumber() || `${process.env.GITHUB_RUN_ID}-${process.env.GITHUB_RUN_NUMBER}`
     const tunnelIdentifier = this[kProvider][kTunnelIdentifier]
     const appiumVersion = isAppium && process.env.SAUCE_APPIUM_VERSION
 
